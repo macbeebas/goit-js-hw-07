@@ -9,8 +9,6 @@ for (let i = 0; i < galleryItems.length; i++) {
   const imageLink = `<a class="gallery__link" href="${galleryItems[i].original}">\n<img class="gallery__image" src="${galleryItems[i].preview}" data-source="${galleryItems[i].original}" alt="${galleryItems[i].description}" />\n</a>`;
   galleryItem.classList.add("gallery__item");
   dives.push(galleryItem);
-  console.log("galleryItem: ", galleryItem);
-  console.log("dives:", dives);
   galleryItem.insertAdjacentHTML("afterbegin", imageLink);
 }
 gallery.append(...dives);
